@@ -22,4 +22,5 @@ sbatch run_train.sh
 
 ## Eval
 这里使用「math-evaluation-harness」，安装 `pip install -r requirements.txt`，不要装 vllm，和 torch 有冲突。启动脚本为 `run_eval_***.sh` 。
+
 如果全参Eval，则删除 `--adaptor_path` 参数；因为 trainer 不保存 tknz，所以额外加入了参数 `--tokenizer_name_or_path` 。# math_focal_loss_sft
